@@ -1,0 +1,46 @@
+#cor {
+	background-color: #ADD8E6;
+}
+#stilos ::-webkit-input-placeholder {
+    color: #708090;
+	text-align: center;
+}
+
+#titulo{
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	top: 50px;
+}
+
+#nomeProduto{
+	position: relative;
+	border-radius: 5px;
+	top: 80px;
+	left: 410px;
+	width: 500px;
+	text-align: center;
+
+}
+
+#qteProduto{
+	position: relative;
+	border-radius: 5px;
+	top: 110px;
+	left: 410px;
+	width: 500px;
+	text-align: center;
+
+}
+
+#botoes{
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	top: 156px;
+    left: 619px;
+}
+
+#botao{
+	color: white;
+}

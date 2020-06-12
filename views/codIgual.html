@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Controle de Estoque</title>
+	<link rel="stylesheet" href="../site/css/cadastar.css" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+</head>
+<body id="cor">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" id="stilos">
+				{loop="$dados"}
+				<form action="/home" method="POST">
+				<p id="titulo1">Código já existente!!</p><br>
+				
+				<p id="titulo1">Sugestão de Código: {$cod}</p><br>
+				
+				<p id="titulo">Dados</p>
+				<input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome" value="{$value.nomeProduto}"><br>
+				<input type="number" name="qteProduto" id="qteProduto" placeholder="Quantidade" value="{$value.qteProduto }"><br>
+				<input type="date" name="dtCadastro" id="dataCadastro" placeholder="Data de Cadastro"value="{$value.dtCadastro}"><br>
+				<input type="text" name="codigo" id="cod" placeholder="Código"><br>
+				<input type="text" name="valor" id="preço" placeholder="Preço" value="{$value.valor}"><br>
+				
+				
+				
+				<input type="submit" id="botoes" class="btn-primary" value="Cadastrar"><a href="/home/produtos" id="botao"></a>
+			</form>
+			{/loop}
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

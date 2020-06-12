@@ -1,0 +1,19 @@
+{
+    "name": "victor/estoque",
+    "authors": [
+        {
+            "name": "Victor Loures",
+            "email": "victorloures10@gmail.com"
+        }
+    ],
+    "require": {
+    	"slim/slim":"2.0",
+		"rain/raintpl":"3.0.0",
+		"mpdf/mpdf":"8.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "victor\\": "vendor\\victor\\php-classes"
+        }
+    }
+}

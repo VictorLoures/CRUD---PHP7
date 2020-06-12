@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Controle de Estoque</title>
+	<link rel="stylesheet" href="../site/css/estoque.css" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+</head>
+<body id="cor">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table>
+						<tr>
+							<td id="nomeUsuario">Usuário: </td><td id="nomeUsuario"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table>
+							<tr>
+								<td id="nomeProduto">Nome do Produto</td>
+								<td id="qteEstoque">Quantidade em Estoque</td>
+								<td id="cod">Código </td>
+								<td id="dtCadastro">Data de Cadastro </td>
+								<td id="preço">Preço </td>
+							</tr>
+							{loop="results"}
+							<tr>
+								<td id="nomeProduto">{$value.nome}</td>
+								<td id="qteEstoque">{$value.qte}</td>
+								<td id="cod">{$value.cod}</td>
+								<td id="dtCadastro"{$value.dtCadastro}></td>
+								<td id="preço">{$value.preco}</td>
+								<td>{$value.valorTotal}</td>
+							</tr>
+							{/loop}
+					</table>
+										
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<button class="btn-success" id="botoes"><a id="botao" href="/home">Voltar ao Início</a></button>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row" >
+				<div class="col-md-12">
+					<p id ="nomeEmpresa">&copy;VL Digital</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+</body>
+</html>

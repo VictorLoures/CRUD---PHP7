@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Controle de Estoque</title>
+	<link rel="stylesheet" href="../site/css/estoque.css" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+</head>
+<body id="cor">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table>
+						<tr>
+							<td id="nomeUsuario">Usuário: </td><td id="nomeUsuario"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table>
+							<tr>
+								<td id="nomeProduto">Nome do Produto</td>
+								<td id="qteEstoque">Quantidade em Estoque</td>
+								<td id="cod">Código </td>
+								<td id="dtCadastro">Data de Cadastro </td>
+								<td id="preço">Preço </td>
+								<td id="valorTotal">Valor Total </td>
+								<td id="edit-delet"></td>
+								<td id="edit-edit"></td>
+								<td id="edit-darBaixa"></td>
+							</tr>
+						<tbody>
+							{loop="$cad"}
+							<tr>
+								<td id="nomeProduto">{$value.nome}</a></td>
+								<td id="qteEstoque">{$value.qte}</td>
+								<td id="cod">{$value.cod}</td>
+								<td id="dtCadastro">{$value.dataa}</td>
+								<td id="preço">R${$value.preco}</td>
+								<td id="valorTotal">R${$value.valorTotal}</td>
+								<td id="edit-delet">
+									<a href="/home/deletar/{$value.nome}" id="corDel"  onclick="return confirm('Deseja realmente excluir este registro?')">Excluir</a>
+								</td>
+								<td id="edit-edit">
+									<a href="/home/editar/{$value.nome}" id="corEd"  > Editar</a>
+								</td>
+								<td id="edit-darBaixa">
+									<a href="/home/darBaixa/{$value.cod}" id="corBaixa" > Dar Baixa</a>
+								</td>
+							</tr>
+							{/loop}
+						</tbody>
+					</table>
+										
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<button class="btn-success" id="botoes"><a id="botao" href="/home">Voltar ao Início</a></button>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row" >
+				<div class="col-md-12">
+					<p id ="nomeEmpresa">&copy;VL Digital</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+</body>
+</html>

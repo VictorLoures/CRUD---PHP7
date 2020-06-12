@@ -1,0 +1,89 @@
+#cor {
+	background-color: #ADD8E6;
+}
+
+#titulo{
+	position: relative;
+	text-align: center;
+}
+
+#procurar{
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	top: 20px;
+	left: -45px;
+}
+
+#tabelaInteira{
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	top: 20px;
+	left: 65px;
+}
+
+
+
+#botoes{
+	position: relative;
+	border-radius: 5px;
+	top: 80px;
+	width: 100px;
+	text-align: center;
+	left: -125px;
+}
+
+#place{
+	color: white;
+}
+
+#ordemAlfabetica{
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	top: 20px;
+	left: 335px;
+}
+
+#ordemCod{
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	top: 20px;
+	left: 65px;
+}
+
+
+#cadastrarTitulo{
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 235px;
+	left: 470px;
+}
+#botoaCadastrar{
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	top: 287px;
+	left: 335px;
+}
+
+#entrar ::-webkit-input-placeholder {
+    color: #708090;
+	text-align: center;
+}
+
+#nomeProduto{
+	position: relative;
+	border-radius: 5px;
+	top: 20px;
+	left: 80px;
+	width: 300px;
+	text-align: center;
+}
+
+
+
+

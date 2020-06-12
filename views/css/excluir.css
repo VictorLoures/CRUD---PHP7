@@ -1,0 +1,23 @@
+#cor {
+	background-color: #ADD8E6;
+}
+
+#titulo{
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	top: 200px;
+	
+
+}
+
+#botoes{
+	position: relative;
+	border-radius: 5px;
+	left: 610px;
+	top: 220px;
+}
+
+#voltar{
+	color: white;
+}

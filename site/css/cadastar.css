@@ -1,0 +1,93 @@
+#cor {
+	background-color: #ADD8E6;
+}
+#stilos ::-webkit-input-placeholder {
+    color: #708090;
+	text-align: center;
+}
+
+#titulo{
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	top: 50px;
+}
+
+#titulo1{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+	top: 50px;
+}
+#nomeProduto{
+	position: relative;
+	border-radius: 5px;
+	top: 80px;
+	left: 310px;
+	width: 500px;
+	text-align: center;
+
+}
+
+#nomeId{
+	position: relative;
+	border-radius: 5px;
+	top: 50px;
+	left: 310px;
+	width: 500px;
+	
+
+}
+
+#qteProduto{
+	position: relative;
+	border-radius: 5px;
+	top: 110px;
+	left: 310px;
+	width: 500px;
+	text-align: center;
+
+}
+
+#dataCadastro{
+	position: relative;
+	border-radius: 5px;
+    left: 310px;
+    top: 140px;
+	width: 500px;
+	text-align: center;
+
+}
+
+
+#cod{
+	position: relative;
+	border-radius: 5px;
+	top: 170px;
+	left: 310px;
+	width: 500px;
+	text-align: center;
+ 
+}
+
+#preço{
+	position: relative;
+	border-radius: 5px;
+	top: 200px;
+	left: 310px;
+	width: 500px;
+	text-align: center;
+
+}
+
+#botoes{
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	top: 233px;
+    left: 517px;
+}
+
+#botao{
+	color: white;
+}

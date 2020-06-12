@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Controle de Estoque</title>
+	<link rel="stylesheet" href="css/darBaixa.css" />
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+<body id="cor">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" id="stilos">
+				{loop="$cad"}
+				<form action="/home/confirmarBaixa/{$value.nome},{$value.qte},{$value.dtCadastro},{$value.cod},{$value.preco}" method="POST">
+				<p id="titulo">Dados</p>
+				<input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nome" value="{$value.nome}"><br>
+				<input type="number" name="qteProduto" id="qteProduto" placeholder="Quantidade" ><br>				
+				
+				<input type="submit" id="botoes" class="btn-primary" value="Dar Baixa"><a href="/home/confirmarBaixa/{$value.nome},{$value.qte}" id="botao"></a>
+			</form>
+			{/loop}
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

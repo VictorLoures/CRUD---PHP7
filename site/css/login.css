@@ -1,0 +1,48 @@
+body{
+	background-image: url("../img/fundo-login.jpg");
+
+}
+
+#entrarPosiçao{
+	position: relative;
+	text-align: center;
+	top : 155px;
+}
+
+#cadastrar{
+	position: relative;
+	text-align: center;
+	top : 155px;
+
+}
+
+#titulo{
+	font-size: 30px;
+	color: white;
+}
+
+#entrar ::-webkit-input-placeholder {
+    color: #708090;
+	text-align: center;
+}
+
+#login{
+	position: relative;
+	border-radius: 5px;
+	top: 5px;
+
+}
+
+#password{
+	position: relative;
+	border-radius: 5px;
+	top: 10px;
+
+}
+
+#botoes {
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+
+}
